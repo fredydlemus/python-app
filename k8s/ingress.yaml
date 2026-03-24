@@ -5,7 +5,8 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - http:
+    - host: "python-app.fredy.local"
+      http:
         paths:
           - path: /
             pathType: Prefix
